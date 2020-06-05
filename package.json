@@ -1,6 +1,6 @@
 {
   "name": "@4react/errors",
-  "version": "2020.1.0",
+  "version": "2020.1.1",
   "author": "Matteo Zanoncello",
   "license": "ISC",
   "repository": {
@@ -18,17 +18,12 @@
     "clean": "rimraf lib",
     "rollup": "rollup -c",
     "build": "npm run clean && npm run rollup",
-    "story": "start-storybook -p 9009 -s .storybook/public",
-    "prepublish": "npm run build"
+    "story": "start-storybook -p 9009 -s .storybook/public"
   },
   "dependencies": {
-    "@4react/hooks": "^2020.1.7",
-    "@4react/store": "^2020.1.3",
     "react": "^16.10.2"
   },
   "peerDependencies": {
-    "@4react/hooks": "^2020.1.7",
-    "@4react/store": "^2020.1.3",
     "react": "^16.10.2"
   },
   "devDependencies": {
@@ -42,7 +37,6 @@
     "@storybook/addon-viewport": "^5.3.17",
     "@storybook/preset-typescript": "^1.2.0",
     "@storybook/react": "^5.3.17",
-    "@types/lodash": "^4.14.149",
     "@typescript-eslint/parser": "^2.26.0",
     "babel-loader": "^8.0.6",
     "eslint": "^6.6.0",
