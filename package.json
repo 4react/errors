@@ -1,21 +1,19 @@
 {
   "name": "@4react/errors",
-  "version": "2020.1.1",
+  "version": "2020.1.3",
   "author": "Matteo Zanoncello",
   "license": "ISC",
   "repository": {
     "url": "https://github.com/4react/errors"
   },
-  "main": "lib/errors.js",
-  "module": "lib/errors.module.js",
-  "types": "lib/types",
+  "main": "dist/errors.js",
+  "module": "dist/errors.module.js",
+  "types": "dist",
   "files": [
-    "lib",
-    "package.json",
-    "README.md"
+    "dist"
   ],
   "scripts": {
-    "clean": "rimraf lib",
+    "clean": "rimraf dist",
     "rollup": "rollup -c",
     "build": "npm run clean && npm run rollup",
     "story": "start-storybook -p 9009 -s .storybook/public"
@@ -45,6 +43,8 @@
     "rollup": "^1.26.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-typescript2": "^0.25.2",
     "styled-components": "^5.1.0",
